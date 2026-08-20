@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solotools-1ou.pages.dev/sitemap.xml
