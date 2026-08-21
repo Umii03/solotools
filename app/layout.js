@@ -42,6 +42,12 @@ export const metadata = {
 
   creator: "SoloTools",
 
+  icons: {
+    icon: "/solotools-icon.png?v=2",
+    shortcut: "/solotools-icon.png?v=2",
+    apple: "/solotools-icon.png?v=2",
+  },
+
   openGraph: {
     title: "SoloTools - Free Tools for Freelancers",
     description:
@@ -94,3 +100,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
