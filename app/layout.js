@@ -1,5 +1,6 @@
 ﻿import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import AnalyticsEvents from "./AnalyticsEvents";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,16 +22,20 @@ export const metadata = {
   },
 
   description:
-    "Free calculators and business tools for freelancers, consultants, creators and independent professionals. Calculate your freelance rates, income and project pricing.",
+    "Free calculators and practical business tools for freelancers, consultants, creators and independent professionals.",
+
+  alternates: {
+    canonical: "/",
+  },
 
   keywords: [
     "freelance tools",
     "freelance calculator",
     "hourly rate calculator",
     "freelance hourly rate",
-    "freelancer tools",
-    "project pricing calculator",
+    "project price calculator",
     "freelance income calculator",
+    "freelancer tools",
   ],
 
   authors: [
@@ -44,7 +49,7 @@ export const metadata = {
   openGraph: {
     title: "SoloTools - Free Tools for Freelancers",
     description:
-      "Free calculators and business tools for freelancers and independent professionals.",
+      "Free calculators and practical guides for freelancers and independent professionals.",
     url: "https://solotools-1ou.pages.dev",
     siteName: "SoloTools",
     type: "website",
@@ -63,6 +68,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <AnalyticsEvents />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2JQK2RGBJJ"

@@ -238,8 +238,6 @@ export default function FreelanceIncomeCalculator() {
           </div>
         </div>
       </section>
-
-      <SiteFooter />
     </main>
   );
 }
@@ -304,3 +302,4 @@ function SiteFooter() {
     </footer>
   );
 }
+

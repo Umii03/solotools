@@ -1,13 +1,23 @@
 ﻿export const metadata = {
   title: "Privacy Policy",
   description:
-    "Read the SoloTools privacy policy and learn how information may be processed when using our website.",
+    "Read the SoloTools Privacy Policy and learn how website usage and analytics information may be processed.",
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <Nav />
+      <nav className="border-b border-slate-200">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="/" className="text-2xl font-bold">
+            Solo<span className="text-blue-600">Tools</span>
+          </a>
+
+          <a href="/" className="text-sm text-slate-600">
+            Back to Tools
+          </a>
+        </div>
+      </nav>
 
       <article className="mx-auto max-w-3xl px-6 py-16">
         <h1 className="text-4xl font-bold tracking-tight">
@@ -19,105 +29,91 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <p className="mt-8 leading-8 text-slate-600">
-          SoloTools provides free online calculators and business tools. This
-          Privacy Policy explains how information may be handled when you use
-          this website.
+          SoloTools provides free online calculators, guides and business
+          tools. This Privacy Policy explains how information may be processed
+          when you use the website.
         </p>
 
-        <h2 className="mt-10 text-2xl font-bold">
-          Calculator data
-        </h2>
+        <Section title="Calculator data">
+          Our calculators currently perform calculations directly in your
+          browser. You do not need to create an account to use these tools.
+        </Section>
 
-        <p className="mt-4 leading-8 text-slate-600">
-          Our current calculators perform calculations directly in your
-          browser. SoloTools does not require you to create an account to use
-          these tools.
-        </p>
+        <Section title="Google Analytics">
+          SoloTools uses Google Analytics to understand website usage, such as
+          page visits, general engagement and which tools are being used.
+          Google Analytics may process device, browser, approximate location,
+          interaction and similar technical information according to Google's
+          applicable policies and settings.
+        </Section>
 
-        <h2 className="mt-10 text-2xl font-bold">
-          Hosting and technical information
-        </h2>
+        <Section title="Cookies and similar technologies">
+          Analytics and future advertising services may use cookies or similar
+          technologies where applicable. Browser settings can be used to
+          control or remove cookies. Additional consent mechanisms may also be
+          displayed where required.
+        </Section>
 
-        <p className="mt-4 leading-8 text-slate-600">
-          SoloTools is hosted using Cloudflare services. Like most hosting
-          providers, Cloudflare may process technical information such as IP
-          addresses, request information and security-related data as necessary
-          to deliver and protect the website.
-        </p>
+        <Section title="Hosting and security">
+          SoloTools is hosted using Cloudflare services. Cloudflare may process
+          technical request and security information necessary to deliver,
+          protect and operate the website.
+        </Section>
 
-        <h2 className="mt-10 text-2xl font-bold">
-          Analytics and advertising
-        </h2>
+        <Section title="Advertising">
+          SoloTools may display advertising in the future, including ads
+          provided through Google services. If advertising is enabled, this
+          policy may be updated with additional information about advertising
+          data and consent choices.
+        </Section>
 
-        <p className="mt-4 leading-8 text-slate-600">
-          SoloTools may use analytics or advertising services in the future,
-          including services provided by Google. If advertising is enabled,
-          advertising providers may use cookies or similar technologies to
-          deliver, measure and personalize ads where permitted.
-        </p>
+        <Section title="Third-party websites">
+          SoloTools may link to external websites. We are not responsible for
+          the content or privacy practices of third-party websites.
+        </Section>
 
-        <h2 className="mt-10 text-2xl font-bold">
-          Third-party links
-        </h2>
+        <Section title="Changes to this policy">
+          We may update this Privacy Policy when the website, analytics,
+          advertising or other services change. The date shown above will be
+          updated when material changes are made.
+        </Section>
 
-        <p className="mt-4 leading-8 text-slate-600">
-          Our website may contain links to third-party websites. SoloTools is
-          not responsible for the privacy practices or content of external
-          websites.
-        </p>
+        <Section title="Contact">
+          Questions or feedback about this Privacy Policy can be submitted
+          through the SoloTools Contact page.
+        </Section>
 
-        <h2 className="mt-10 text-2xl font-bold">
-          Changes to this policy
-        </h2>
-
-        <p className="mt-4 leading-8 text-slate-600">
-          This Privacy Policy may be updated as SoloTools adds new features,
-          analytics, advertising or other services. The updated date shown on
-          this page will be changed when material updates are made.
-        </p>
-
-        <h2 className="mt-10 text-2xl font-bold">
-          Contact
-        </h2>
-
-        <p className="mt-4 leading-8 text-slate-600">
-          Questions about this Privacy Policy can be submitted through our
-          Contact page.
-        </p>
+        <div className="mt-10">
+          <a
+            href="/contact/"
+            className="font-semibold text-blue-600 hover:underline"
+          >
+            Contact SoloTools →
+          </a>
+        </div>
       </article>
 
-      <Footer />
+      <footer className="bg-slate-950 px-6 py-10 text-sm text-slate-400">
+        <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-5">
+          <p>© 2026 SoloTools.</p>
+
+          <div className="flex flex-wrap gap-5">
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/privacy-policy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
 
-function Nav() {
+function Section({ title, children }) {
   return (
-    <nav className="border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="text-2xl font-bold">
-          Solo<span className="text-blue-600">Tools</span>
-        </a>
-        <a href="/" className="text-sm font-medium text-slate-600 hover:text-blue-600">
-          ← Back to Tools
-        </a>
-      </div>
-    </nav>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="border-t border-slate-800 bg-slate-950 px-6 py-10 text-slate-400">
-      <div className="mx-auto flex max-w-6xl flex-col gap-5 text-sm md:flex-row md:items-center md:justify-between">
-        <p>© 2026 SoloTools.</p>
-        <div className="flex flex-wrap gap-5">
-          <a href="/about/" className="hover:text-white">About</a>
-          <a href="/contact/" className="hover:text-white">Contact</a>
-          <a href="/privacy-policy/" className="hover:text-white">Privacy</a>
-          <a href="/terms/" className="hover:text-white">Terms</a>
-        </div>
-      </div>
-    </footer>
+    <section className="mt-10">
+      <h2 className="text-2xl font-bold">{title}</h2>
+      <p className="mt-4 leading-8 text-slate-600">{children}</p>
+    </section>
   );
 }
