@@ -67,6 +67,16 @@ export default function RootLayout({ children }) {
 
         <AnalyticsEvents />
 
+        {/* Google AdSense */}
+        <Script
+          id="google-adsense"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3494912159540254"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2JQK2RGBJJ"
           strategy="afterInteractive"
