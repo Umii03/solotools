@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+﻿# SoloTools
 
-## Getting Started
+Free calculators and practical guides for freelancers, consultants, creators, and independent professionals.
 
-First, run the development server:
+**Live Website:** https://solotools-1ou.pages.dev/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+SoloTools is a free collection of browser-based tools designed to help freelancers make better pricing and income decisions.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+No signup. No subscription. Simple calculations with instant results.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Tools
 
-## Learn More
+### Freelance Hourly Rate Calculator
 
-To learn more about Next.js, take a look at the following resources:
+Estimate how much you should charge per hour based on desired income, expenses, taxes, working schedule, vacation time, and billable percentage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://solotools-1ou.pages.dev/freelance-hourly-rate-calculator/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Project Price Calculator
 
-## Deploy on Vercel
+Estimate a profitable project quote using your hourly rate, estimated hours, expenses, contingency buffer, and desired profit margin.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://solotools-1ou.pages.dev/project-price-calculator/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Freelance Income Calculator
+
+Estimate yearly revenue, monthly income, business expenses, taxes, and take-home income.
+
+https://solotools-1ou.pages.dev/freelance-income-calculator/
+
+## Freelance Guides
+
+SoloTools includes practical guides covering freelance pricing, billable hours, project estimation, pricing mistakes, and income planning.
+
+https://solotools-1ou.pages.dev/guides/
+
+## Features
+
+- Free to use
+- No account required
+- Mobile friendly
+- Browser-based calculations
+- Multiple currencies
+- SEO-friendly static pages
+- Fast static hosting
+
+## Tech Stack
+
+- Next.js
+- React
+- Tailwind CSS
+- JavaScript
+- Cloudflare Pages
+- Google Analytics
+- Google Search Console
+- Bing Webmaster Tools
+- IndexNow
+
+## Run Locally
+
+Clone:
+
+    git clone https://github.com/Umii03/solotools.git
+
+Open project:
+
+    cd solotools
+
+Install dependencies:
+
+    npm install
+
+Start development server:
+
+    npm run dev
+
+Then open:
+
+    http://localhost:3000
+
+## Production Build
+
+    npm run build
+
+SoloTools uses static export and generates the production site in the `out` directory.
+
+## Deployment
+
+The website is automatically deployed to Cloudflare Pages whenever changes are pushed to the `main` branch.
+
+Production:
+
+https://solotools-1ou.pages.dev/
+
+## Contributing
+
+Suggestions, bug reports, and ideas are welcome.
+
+https://github.com/Umii03/solotools/issues
+
+## Disclaimer
+
+SoloTools calculators provide simplified estimates for informational and planning purposes only.
+
+Results should not be considered financial, tax, accounting, or legal advice.
+
+## License
+
+Copyright 2026 SoloTools. All rights reserved.
