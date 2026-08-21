@@ -23,24 +23,33 @@
     },
   ];
 
+  const guides = [
+    {
+      title: "How Much Should I Charge as a Freelancer?",
+      href: "/how-much-should-i-charge-as-a-freelancer/",
+    },
+    {
+      title: "Hourly Rate vs Fixed Project Pricing",
+      href: "/hourly-vs-fixed-project-pricing/",
+    },
+    {
+      title: "What Are Billable Hours for Freelancers?",
+      href: "/billable-hours-for-freelancers/",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <nav className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-2xl font-bold tracking-tight">
+          <a href="/" className="text-2xl font-bold">
             Solo<span className="text-blue-600">Tools</span>
           </a>
 
           <div className="flex items-center gap-5 text-sm font-medium text-slate-600">
-            <a href="#tools" className="hover:text-blue-600">
-              Tools
-            </a>
-            <a href="/about/" className="hover:text-blue-600">
-              About
-            </a>
-            <a href="/contact/" className="hover:text-blue-600">
-              Contact
-            </a>
+            <a href="#tools">Tools</a>
+            <a href="#guides">Guides</a>
+            <a href="/about/">About</a>
           </div>
         </div>
       </nav>
@@ -57,13 +66,13 @@
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            Free calculators and business tools for freelancers, consultants,
-            creators and independent professionals. No signup. No subscriptions.
+            Free calculators and practical guides for freelancers, consultants,
+            creators and independent professionals.
           </p>
 
           <a
             href="#tools"
-            className="mt-8 inline-flex rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+            className="mt-8 inline-flex rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white"
           >
             Explore Free Tools
           </a>
@@ -71,65 +80,47 @@
       </section>
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-6 py-8 text-center sm:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-8 px-6 py-8 text-center sm:grid-cols-3">
           <div>
-            <p className="text-2xl font-bold">100% Free</p>
-            <p className="mt-1 text-sm text-slate-500">
-              No subscriptions
-            </p>
+            <p className="text-2xl font-bold">Free</p>
+            <p className="text-sm text-slate-500">No subscriptions</p>
           </div>
 
           <div>
             <p className="text-2xl font-bold">Instant</p>
-            <p className="mt-1 text-sm text-slate-500">
-              Results in your browser
-            </p>
+            <p className="text-sm text-slate-500">Browser-based calculators</p>
           </div>
 
           <div>
             <p className="text-2xl font-bold">No Signup</p>
-            <p className="mt-1 text-sm text-slate-500">
-              Start using tools immediately
-            </p>
+            <p className="text-sm text-slate-500">Use tools immediately</p>
           </div>
         </div>
       </section>
 
       <section id="tools" className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-10">
-            <p className="font-semibold text-blue-600">
-              FREE TOOLS
-            </p>
+          <p className="font-semibold text-blue-600">FREE CALCULATORS</p>
+          <h2 className="mt-2 text-3xl font-bold">
+            Tools for independent professionals
+          </h2>
 
-            <h2 className="mt-2 text-3xl font-bold">
-              Tools for independent professionals
-            </h2>
-
-            <p className="mt-3 max-w-2xl text-slate-600">
-              Plan your rates, quote projects and estimate freelance income
-              using simple calculators built for independent work.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {tools.map((tool) => (
               <a
                 key={tool.href}
                 href={tool.href}
-                className="block rounded-2xl border border-blue-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-md"
+                className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-md"
               >
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-xl font-bold text-blue-600">
                   {tool.symbol}
                 </div>
 
-                <div className="mb-3 inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+                <p className="mb-3 inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
                   AVAILABLE NOW
-                </div>
+                </p>
 
-                <h3 className="text-xl font-bold">
-                  {tool.title}
-                </h3>
+                <h3 className="text-xl font-bold">{tool.title}</h3>
 
                 <p className="mt-3 leading-7 text-slate-600">
                   {tool.description}
@@ -144,43 +135,68 @@
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="mx-auto max-w-4xl text-center">
+      <section id="guides" className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-6xl">
           <p className="font-semibold text-blue-600">
-            BUILT FOR FREELANCERS
+            FREELANCE GUIDES
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold">
-            Make business decisions with clearer numbers
+          <h2 className="mt-2 text-3xl font-bold">
+            Learn the numbers behind freelancing
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-600">
-            Freelancing involves pricing, planning and trade-offs. SoloTools
-            gives you quick estimates so you can understand the numbers behind
-            your rates and projects before making a decision.
+          <p className="mt-3 max-w-2xl leading-7 text-slate-600">
+            Practical guides explaining pricing, billable time and freelance
+            business decisions.
+          </p>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {guides.map((guide) => (
+              <a
+                key={guide.href}
+                href={guide.href}
+                className="rounded-2xl border border-slate-200 p-6 transition hover:border-blue-400 hover:shadow-sm"
+              >
+                <p className="text-sm font-semibold text-blue-600">
+                  GUIDE
+                </p>
+
+                <h3 className="mt-3 text-xl font-bold">
+                  {guide.title}
+                </h3>
+
+                <p className="mt-5 font-semibold text-blue-600">
+                  Read Guide →
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 text-center">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold">
+            Built for freelancers who want clearer numbers
+          </h2>
+
+          <p className="mt-5 leading-8 text-slate-600">
+            SoloTools combines simple calculators with practical explanations
+            so you can understand how rates, expenses, billable time and
+            project pricing affect your freelance business.
           </p>
         </div>
       </section>
 
-      <footer className="border-t border-slate-800 bg-slate-950 px-6 py-10 text-slate-400">
-        <div className="mx-auto flex max-w-6xl flex-col gap-5 text-sm md:flex-row md:items-center md:justify-between">
-          <p>
-            © 2026 SoloTools. Free tools for independent professionals.
-          </p>
+      <footer className="bg-slate-950 px-6 py-10 text-sm text-slate-400">
+        <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-5">
+          <p>© 2026 SoloTools.</p>
 
           <div className="flex flex-wrap gap-5">
-            <a href="/about/" className="hover:text-white">
-              About
-            </a>
-            <a href="/contact/" className="hover:text-white">
-              Contact
-            </a>
-            <a href="/privacy-policy/" className="hover:text-white">
-              Privacy Policy
-            </a>
-            <a href="/terms/" className="hover:text-white">
-              Terms
-            </a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms/">Terms</a>
           </div>
         </div>
       </footer>
