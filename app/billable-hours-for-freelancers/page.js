@@ -105,9 +105,13 @@ function Nav() {
   return (
     <nav className="border-b border-slate-200">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="text-2xl font-bold">
-          Solo<span className="text-blue-600">Tools</span>
-        </a>
+        <a href="/" aria-label="SoloTools home" className="inline-flex items-center">
+  <img
+    src="/solotools-logo.png"
+    alt="SoloTools"
+    className="h-9 w-auto sm:h-10"
+  />
+</a>
         <a href="/" className="text-sm text-slate-600">Back to Tools</a>
       </div>
     </nav>
@@ -129,3 +133,4 @@ function Footer() {
     </footer>
   );
 }
+

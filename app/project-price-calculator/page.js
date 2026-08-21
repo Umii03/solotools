@@ -44,9 +44,13 @@ export default function ProjectPriceCalculator() {
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <nav className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-2xl font-bold tracking-tight">
-            Solo<span className="text-blue-600">Tools</span>
-          </a>
+          <a href="/" aria-label="SoloTools home" className="inline-flex items-center">
+  <img
+    src="/solotools-logo.png"
+    alt="SoloTools"
+    className="h-9 w-auto sm:h-10"
+  />
+</a>
 
           <a
             href="/"
@@ -273,3 +277,4 @@ function BreakdownRow({ label, value }) {
     </div>
   );
 }
+

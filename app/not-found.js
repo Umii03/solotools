@@ -10,9 +10,13 @@ export default function NotFound() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-slate-50 px-6 text-slate-900">
       <div className="max-w-xl text-center">
-        <a href="/" className="text-2xl font-bold">
-          Solo<span className="text-blue-600">Tools</span>
-        </a>
+        <a href="/" aria-label="SoloTools home" className="inline-flex items-center">
+  <img
+    src="/solotools-logo.png"
+    alt="SoloTools"
+    className="h-9 w-auto sm:h-10"
+  />
+</a>
 
         <p className="mt-10 text-sm font-bold tracking-widest text-blue-600">
           404 ERROR
@@ -46,3 +50,4 @@ export default function NotFound() {
     </main>
   );
 }
+
