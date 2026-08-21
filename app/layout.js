@@ -42,12 +42,6 @@ export const metadata = {
 
   creator: "SoloTools",
 
-  icons: {
-    icon: "/solotools-icon.png?v=2",
-    shortcut: "/solotools-icon.png?v=2",
-    apple: "/solotools-icon.png?v=2",
-  },
-
   openGraph: {
     title: "SoloTools - Free Tools for Freelancers",
     description:
@@ -66,6 +60,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="/solotools-icon.png?v=10"
+        />
+
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href="/solotools-icon.png?v=10"
+        />
+
+        <link
+          rel="apple-touch-icon"
+          href="/solotools-icon.png?v=10"
+        />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -73,7 +86,6 @@ export default function RootLayout({ children }) {
 
         <AnalyticsEvents />
 
-        {/* Google AdSense */}
         <Script
           id="google-adsense"
           async
@@ -82,7 +94,6 @@ export default function RootLayout({ children }) {
           strategy="beforeInteractive"
         />
 
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2JQK2RGBJJ"
           strategy="afterInteractive"
@@ -100,4 +111,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
