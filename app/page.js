@@ -52,7 +52,7 @@
 
           <div className="flex items-center gap-5 text-sm font-medium text-slate-600">
             <a href="#tools">Tools</a>
-            <a href="#guides">Guides</a>
+            <a href="/guides/">Guides</a>
             <a href="/about/">About</a>
           </div>
         </div>
@@ -207,4 +207,5 @@
     </main>
   );
 }
+
 
