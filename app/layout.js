@@ -24,10 +24,6 @@ export const metadata = {
   description:
     "Free calculators and practical business tools for freelancers, consultants, creators and independent professionals.",
 
-  alternates: {
-    canonical: "/",
-  },
-
   keywords: [
     "freelance tools",
     "freelance calculator",
