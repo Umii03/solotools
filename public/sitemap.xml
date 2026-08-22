@@ -1,81 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://solotools-1ou.pages.dev/</loc></url>
-
-  <url><loc>https://solotools-1ou.pages.dev/freelance-hourly-rate-calculator/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/project-price-calculator/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/freelance-income-calculator/</loc></url>
-
-  <url><loc>https://solotools-1ou.pages.dev/guides/</loc></url>
-
-  <url><loc>https://solotools-1ou.pages.dev/how-much-should-i-charge-as-a-freelancer/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/hourly-vs-fixed-project-pricing/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/billable-hours-for-freelancers/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/freelance-pricing-mistakes/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/how-many-billable-hours-per-year/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/how-to-estimate-a-freelance-project/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/freelance-income-planning/</loc></url>
-
-  <url><loc>https://solotools-1ou.pages.dev/about/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/contact/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/privacy-policy/</loc></url>
-  <url><loc>https://solotools-1ou.pages.dev/terms/</loc></url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/salary-to-hourly-calculator/</loc>
+    <loc>https://solotools-1ou.pages.dev/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/about/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/age-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/base64-encoder-decoder/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/billable-hours-for-freelancers/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/calculators/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/image-tools/</loc>
+    <loc>https://solotools-1ou.pages.dev/case-converter/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/image-converter/</loc>
+    <loc>https://solotools-1ou.pages.dev/character-counter/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/jpg-to-png/</loc>
+    <loc>https://solotools-1ou.pages.dev/contact/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/png-to-jpg/</loc>
+    <loc>https://solotools-1ou.pages.dev/date-difference-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/jpg-to-webp/</loc>
+    <loc>https://solotools-1ou.pages.dev/developer-tools/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/png-to-webp/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/webp-to-jpg/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/webp-to-png/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/image-compressor/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/pdf-tools/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/merge-pdf/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
+    <loc>https://solotools-1ou.pages.dev/discount-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/extract-pdf-pages/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/rotate-pdf/</loc>
+    <loc>https://solotools-1ou.pages.dev/freelance-hourly-rate-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/reorder-pdf-pages/</loc>
+    <loc>https://solotools-1ou.pages.dev/freelance-income-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/pdf-page-counter/</loc>
+    <loc>https://solotools-1ou.pages.dev/freelance-income-planning/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/freelance-pricing-mistakes/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/guides/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/hourly-vs-fixed-project-pricing/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/how-many-billable-hours-per-year/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/how-much-should-i-charge-as-a-freelancer/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/how-to-estimate-a-freelance-project/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-compressor/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-converter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-tools/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/images-to-pdf/</loc>
@@ -84,57 +85,87 @@
     <loc>https://solotools-1ou.pages.dev/jpg-to-pdf/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/png-to-pdf/</loc>
+    <loc>https://solotools-1ou.pages.dev/jpg-to-png/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/text-tools/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/developer-tools/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/word-counter/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/character-counter/</loc>
-  </url>
-  <url>
-    <loc>https://solotools-1ou.pages.dev/case-converter/</loc>
+    <loc>https://solotools-1ou.pages.dev/jpg-to-webp/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/json-formatter/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/url-encoder-decoder/</loc>
+    <loc>https://solotools-1ou.pages.dev/loan-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/base64-encoder-decoder/</loc>
+    <loc>https://solotools-1ou.pages.dev/merge-pdf/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/uuid-generator/</loc>
+    <loc>https://solotools-1ou.pages.dev/pdf-page-counter/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/qr-code-generator/</loc>
+    <loc>https://solotools-1ou.pages.dev/pdf-tools/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/percentage-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/discount-calculator/</loc>
+    <loc>https://solotools-1ou.pages.dev/png-to-jpg/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/png-to-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/png-to-webp/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/privacy-policy/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/profit-margin-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/loan-calculator/</loc>
+    <loc>https://solotools-1ou.pages.dev/project-price-calculator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/age-calculator/</loc>
+    <loc>https://solotools-1ou.pages.dev/qr-code-generator/</loc>
   </url>
   <url>
-    <loc>https://solotools-1ou.pages.dev/date-difference-calculator/</loc>
+    <loc>https://solotools-1ou.pages.dev/reorder-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/rotate-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/salary-to-hourly-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/terms/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/text-tools/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/tools/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/url-encoder-decoder/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/uuid-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/vat-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/webp-to-jpg/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/webp-to-png/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/word-counter/</loc>
   </url>
 </urlset>

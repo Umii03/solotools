@@ -131,7 +131,7 @@ export default function Home() {
                 </p>
 
                 <p className="mt-5 font-semibold text-blue-600">
-                  Use Calculator â†’
+                  Use Calculator Ã¢â€ â€™
                 </p>
               </a>
             ))}
@@ -170,7 +170,7 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-5 font-semibold text-blue-600">
-                  Read Guide â†’
+                  Read Guide Ã¢â€ â€™
                 </p>
               </a>
             ))}
@@ -194,7 +194,7 @@ export default function Home() {
 
       <footer className="bg-slate-950 px-6 py-10 text-sm text-slate-400">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-5">
-          <p>Â© 2026 SoloTools.</p>
+          <p>Ã‚Â© 2026 SoloTools.</p>
 
           <div className="flex flex-wrap gap-5">
             <a href="/about/">About</a>
@@ -242,7 +242,7 @@ export default function Home() {
             href="/calculators/"
             className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
           >
-            Browse all calculators â†’
+            Browse all calculators Ã¢â€ â€™
           </a>
         </div>
       </section>
@@ -337,6 +337,30 @@ export default function Home() {
               Browse Developer Tools -&gt;
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-slate-950 p-6 text-white shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">
+            Everything in one place
+          </p>
+
+          <h2 className="mt-2 text-3xl font-bold">
+            Browse All SoloTools
+          </h2>
+
+          <p className="mt-3 max-w-2xl leading-7 text-slate-300">
+            Explore calculators, image tools, PDF utilities, text tools,
+            and developer tools from one complete directory.
+          </p>
+
+          <a
+            href="/tools/"
+            className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 font-bold text-slate-950"
+          >
+            View All Tools -&gt;
+          </a>
         </div>
       </section>
 </main>
