@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 
@@ -78,11 +78,25 @@ export default function SalaryToHourlyCalculator() {
             />
           </a>
 
-          <nav className="flex gap-4 text-sm font-medium text-slate-600">
-            <a href="/" className="hover:text-slate-950">
-              Tools
+          <nav className="flex flex-wrap gap-4 text-sm font-medium text-slate-600">
+            <a
+              href="/tools/"
+              className="hover:text-slate-950"
+            >
+              All Tools
             </a>
-            <a href="/guides/" className="hover:text-slate-950">
+
+            <a
+              href="/calculators/"
+              className="hover:text-slate-950"
+            >
+              Calculators
+            </a>
+
+            <a
+              href="/guides/"
+              className="hover:text-slate-950"
+            >
               Guides
             </a>
           </nav>
@@ -100,9 +114,10 @@ export default function SalaryToHourlyCalculator() {
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Convert an annual salary into an hourly rate, or switch the
-            calculator to convert an hourly rate into an estimated annual
-            salary.
+            Use this salary to hourly calculator to convert annual pay into an
+            hourly rate, or switch to hourly to salary to estimate annual,
+            monthly, and weekly pay. Adjust hours per week and working weeks
+            per year to match your schedule.
           </p>
         </div>
 
@@ -292,6 +307,13 @@ export default function SalaryToHourlyCalculator() {
             For example, a salary of 60,000 with a 40-hour work week across
             52 weeks equals approximately 28.85 per hour before deductions.
           </p>
+
+          <p className="mt-4 leading-7 text-slate-600">
+            A standard 40-hour week across 52 weeks equals 2,080 working
+            hours per year. That is why a quick salary-to-hourly calculation
+            often divides annual salary by 2,080. If you work fewer hours or
+            fewer weeks, use your actual schedule in the calculator above.
+          </p>
         </div>
       </section>
 
@@ -310,6 +332,186 @@ export default function SalaryToHourlyCalculator() {
           <p className="mt-2 text-lg">
             Annual salary = Hourly rate x Hours per week x Weeks per year
           </p>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-4xl px-5 py-12">
+          <h2 className="text-3xl font-bold">
+            Salary to hourly conversion examples
+          </h2>
+
+          <p className="mt-4 leading-7 text-slate-600">
+            These quick examples assume 40 hours per week and 52 working
+            weeks per year, which equals 2,080 annual hours. The same
+            arithmetic works with any currency.
+          </p>
+
+          <div className="mt-7 grid gap-6 lg:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <div className="border-b border-slate-200 p-5">
+                <h3 className="text-lg font-bold">
+                  Annual salary to hourly rate
+                </h3>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-5 py-3 font-semibold">
+                        Annual salary
+                      </th>
+
+                      <th className="px-5 py-3 font-semibold">
+                        Hourly rate
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody className="divide-y divide-slate-200">
+                    <tr>
+                      <td className="px-5 py-3">30,000</td>
+                      <td className="px-5 py-3">14.42 / hour</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">40,000</td>
+                      <td className="px-5 py-3">19.23 / hour</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">50,000</td>
+                      <td className="px-5 py-3">24.04 / hour</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">60,000</td>
+                      <td className="px-5 py-3">28.85 / hour</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">75,000</td>
+                      <td className="px-5 py-3">36.06 / hour</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">100,000</td>
+                      <td className="px-5 py-3">48.08 / hour</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <div className="border-b border-slate-200 p-5">
+                <h3 className="text-lg font-bold">
+                  Hourly rate to annual salary
+                </h3>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-5 py-3 font-semibold">
+                        Hourly rate
+                      </th>
+
+                      <th className="px-5 py-3 font-semibold">
+                        Annual salary
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody className="divide-y divide-slate-200">
+                    <tr>
+                      <td className="px-5 py-3">15 / hour</td>
+                      <td className="px-5 py-3">31,200 / year</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">20 / hour</td>
+                      <td className="px-5 py-3">41,600 / year</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">25 / hour</td>
+                      <td className="px-5 py-3">52,000 / year</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">30 / hour</td>
+                      <td className="px-5 py-3">62,400 / year</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">40 / hour</td>
+                      <td className="px-5 py-3">83,200 / year</td>
+                    </tr>
+
+                    <tr>
+                      <td className="px-5 py-3">50 / hour</td>
+                      <td className="px-5 py-3">104,000 / year</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-5 text-sm leading-6 text-slate-500">
+            These examples are gross-pay estimates before taxes, benefits,
+            overtime, bonuses, and other deductions or compensation.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-5 py-12">
+        <h2 className="text-3xl font-bold">
+          What changes your hourly rate from salary?
+        </h2>
+
+        <p className="mt-4 leading-7 text-slate-600">
+          The biggest inputs are hours worked per week and working weeks per
+          year. Two people with the same annual salary can have different
+          effective hourly rates if their schedules are different.
+        </p>
+
+        <div className="mt-6 grid gap-5 sm:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="font-bold">
+              Hours per week
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              More hours worked for the same annual salary means a lower
+              effective hourly rate.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="font-bold">
+              Weeks per year
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Use fewer than 52 weeks when unpaid leave or seasonal work
+              should be excluded.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="font-bold">
+              Extra compensation
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Bonuses, overtime, benefits, and employer contributions are not
+              included in the basic salary conversion.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -393,21 +595,76 @@ export default function SalaryToHourlyCalculator() {
             <h3 className="text-lg font-bold">
               Is employee hourly pay the same as a freelance hourly rate?
             </h3>
+
             <p className="mt-2 leading-7 text-slate-600">
               Usually not. Freelancers generally need to account for business
               expenses, non-billable time, benefits, and taxes.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold">
+              How do I calculate my hourly rate from salary?
+            </h3>
+
+            <p className="mt-2 leading-7 text-slate-600">
+              Divide annual salary by total working hours for the year. A
+              common full-time estimate uses 40 hours per week multiplied by
+              52 weeks, or 2,080 hours. For example, 50,000 divided by 2,080
+              is approximately 24.04 per hour.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold">
+              What is 25 an hour annually?
+            </h3>
+
+            <p className="mt-2 leading-7 text-slate-600">
+              At 40 hours per week and 52 weeks per year, 25 per hour equals
+              approximately 52,000 per year before taxes and deductions.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold">
+              How many working hours are in a year?
+            </h3>
+
+            <p className="mt-2 leading-7 text-slate-600">
+              A 40-hour work week across 52 weeks equals 2,080 hours. Your
+              actual annual hours may be different because of part-time work,
+              unpaid leave, seasonal schedules, or other time away.
             </p>
           </div>
         </div>
       </section>
 
       <section className="border-t border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-4xl px-5 py-12">
+        <div className="mx-auto max-w-5xl px-5 py-12">
           <h2 className="text-2xl font-bold">
-            Related freelancer tools
+            Related salary and pay tools
           </h2>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <p className="mt-3 leading-7 text-slate-600">
+            Continue with calculators for raises, percentages, freelance
+            pricing, and income planning.
+          </p>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a
+              href="/pay-raise-calculator/"
+              className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-slate-400"
+            >
+              <h3 className="font-bold">
+                Pay Raise Calculator
+              </h3>
+
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Calculate a raise, new annual pay, and monthly increase.
+              </p>
+            </a>
+
             <a
               href="/freelance-hourly-rate-calculator/"
               className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-slate-400"
@@ -415,20 +672,22 @@ export default function SalaryToHourlyCalculator() {
               <h3 className="font-bold">
                 Freelance Hourly Rate Calculator
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Calculate a sustainable freelance hourly rate.
               </p>
             </a>
 
             <a
-              href="/project-price-calculator/"
+              href="/percentage-calculator/"
               className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-slate-400"
             >
               <h3 className="font-bold">
-                Project Price Calculator
+                Percentage Calculator
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                Estimate a profitable project quote.
+                Calculate percentages, increases, decreases, and changes.
               </p>
             </a>
 
@@ -439,17 +698,25 @@ export default function SalaryToHourlyCalculator() {
               <h3 className="font-bold">
                 Freelance Income Calculator
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Estimate revenue, expenses, taxes, and take-home income.
               </p>
             </a>
           </div>
+
+          <a
+            href="/calculators/"
+            className="mt-6 inline-flex font-semibold text-blue-700 hover:underline"
+          >
+            Browse all calculators -&gt;
+          </a>
         </div>
       </section>
 
       <footer className="border-t border-slate-200">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>SoloTools - free tools for freelancers.</p>
+          <p>SoloTools - free practical online tools.</p>
 
           <div className="flex flex-wrap gap-4">
             <a href="/about/" className="hover:text-slate-900">
