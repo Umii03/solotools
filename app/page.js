@@ -246,6 +246,27 @@
           </a>
         </div>
       </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            Image utilities
+          </p>
+          <h2 className="mt-2 text-2xl font-bold">
+            Free Image Tools
+          </h2>
+          <p className="mt-3 max-w-2xl leading-7 text-slate-600">
+            Convert JPG, PNG, and WebP images directly in your browser with
+            more image utilities planned over time.
+          </p>
+          <a
+            href="/image-tools/"
+            className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
+          >
+            Browse Image Tools -&gt;
+          </a>
+        </div>
+      </section>
 </main>
   );
 }
