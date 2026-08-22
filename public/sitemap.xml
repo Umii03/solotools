@@ -19,13 +19,28 @@
     <loc>https://solotools-1ou.pages.dev/billable-hours-for-freelancers/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/bmi-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/bmr-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/break-even-calculator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/calculators/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/calorie-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/case-converter/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/character-counter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/compound-interest-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/compress-pdf/</loc>
@@ -37,6 +52,9 @@
     <loc>https://solotools-1ou.pages.dev/crop-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/csv-to-json/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/date-difference-calculator/</loc>
   </url>
   <url>
@@ -46,7 +64,13 @@
     <loc>https://solotools-1ou.pages.dev/discount-calculator/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/duplicate-line-remover/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/extract-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/flip-image/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/freelance-hourly-rate-calculator/</loc>
@@ -59,6 +83,12 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/freelance-pricing-mistakes/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/fuel-cost-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/grayscale-image/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/guides/</loc>
@@ -76,10 +106,16 @@
     <loc>https://solotools-1ou.pages.dev/how-to-estimate-a-freelance-project/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/image-brightness-contrast/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/image-compressor/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/image-converter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-cropper/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
@@ -103,13 +139,22 @@
     <loc>https://solotools-1ou.pages.dev/json-formatter/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/json-to-csv/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/loan-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/merge-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/mortgage-calculator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/organize-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/password-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/pdf-metadata-editor/</loc>
@@ -151,10 +196,19 @@
     <loc>https://solotools-1ou.pages.dev/qr-code-generator/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/random-number-generator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/remove-pdf-pages/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/reorder-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/roi-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/rotate-image/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/rotate-pdf/</loc>
@@ -163,7 +217,16 @@
     <loc>https://solotools-1ou.pages.dev/salary-to-hourly-calculator/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/sha256-generator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/sign-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/simple-interest-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/slug-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
@@ -172,10 +235,19 @@
     <loc>https://solotools-1ou.pages.dev/terms/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/text-sorter/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/text-tools/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/tip-calculator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/tools/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/unix-timestamp-converter/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/url-encoder-decoder/</loc>
@@ -197,5 +269,8 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/word-counter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/xml-formatter/</loc>
   </url>
 </urlset>
