@@ -1,4 +1,4 @@
-﻿export default function Home() {
+export default function Home() {
   const tools = [
     {
       symbol: "$",
@@ -264,6 +264,32 @@
             className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
           >
             Browse Image Tools -&gt;
+          </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            PDF utilities
+          </p>
+
+          <h2 className="mt-2 text-2xl font-bold">
+            Free PDF Tools
+          </h2>
+
+          <p className="mt-3 max-w-2xl leading-7 text-slate-600">
+            Merge, split, rotate, reorder,
+            extract pages, inspect PDFs,
+            and convert JPG or PNG images
+            to PDF directly in your browser.
+          </p>
+
+          <a
+            href="/pdf-tools/"
+            className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
+          >
+            Browse PDF Tools -&gt;
           </a>
         </div>
       </section>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://solotools-1ou.pages.dev/</loc></url>
 
@@ -55,5 +55,35 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/pdf-tools/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/merge-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/extract-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/rotate-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/reorder-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/pdf-page-counter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/images-to-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/jpg-to-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/png-to-pdf/</loc>
   </url>
 </urlset>
