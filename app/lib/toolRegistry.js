@@ -491,7 +491,202 @@ export const toolRegistry = [
     "/xml-formatter/",
     "Validate and pretty-print XML."
   ),
-];
+  tool(
+    "calculator",
+    "Sales Tax Calculator",
+    "/sales-tax-calculator/",
+    "Calculate sales tax, tax amount, and final purchase price."
+  ),
+  tool(
+    "calculator",
+    "Commission Calculator",
+    "/commission-calculator/",
+    "Calculate sales commission and total earnings."
+  ),
+  tool(
+    "calculator",
+    "Savings Goal Calculator",
+    "/savings-goal-calculator/",
+    "Estimate the monthly saving needed to reach a financial goal."
+  ),
+  tool(
+    "calculator",
+    "Pay Raise Calculator",
+    "/pay-raise-calculator/",
+    "Calculate salary increase, new pay, and monthly increase."
+  ),
+  tool(
+    "calculator",
+    "Time Duration Calculator",
+    "/time-duration-calculator/",
+    "Calculate the duration between two clock times."
+  ),
+  tool(
+    "calculator",
+    "Speed Calculator",
+    "/speed-calculator/",
+    "Calculate average speed from distance and travel time."
+  ),
+  tool(
+    "calculator",
+    "Pace Calculator",
+    "/pace-calculator/",
+    "Calculate pace per kilometer or mile from distance and time."
+  ),
+  tool(
+    "calculator",
+    "Electricity Cost Calculator",
+    "/electricity-cost-calculator/",
+    "Estimate appliance electricity usage and operating cost."
+  ),
+  tool(
+    "calculator",
+    "Mean Median Mode Calculator",
+    "/mean-median-mode-calculator/",
+    "Calculate mean, median, mode, minimum, and maximum."
+  ),
+  tool(
+    "calculator",
+    "Ratio Calculator",
+    "/ratio-calculator/",
+    "Simplify integer ratios and calculate their decimal relationship."
+  ),
+
+  tool(
+    "text",
+    "Line Counter",
+    "/line-counter/",
+    "Count total, non-empty, and empty lines."
+  ),
+  tool(
+    "text",
+    "Sentence Counter",
+    "/sentence-counter/",
+    "Estimate the number of sentences in a block of text."
+  ),
+  tool(
+    "text",
+    "Paragraph Counter",
+    "/paragraph-counter/",
+    "Count paragraphs separated by blank lines."
+  ),
+  tool(
+    "text",
+    "Whitespace Remover",
+    "/whitespace-remover/",
+    "Clean repeated spaces, tabs, and unnecessary blank lines."
+  ),
+  tool(
+    "text",
+    "Text Reverser",
+    "/text-reverser/",
+    "Reverse characters in text."
+  ),
+  tool(
+    "text",
+    "Find and Replace",
+    "/find-and-replace/",
+    "Find literal text and replace every occurrence."
+  ),
+  tool(
+    "text",
+    "Word Frequency Counter",
+    "/word-frequency-counter/",
+    "Count how often each word appears."
+  ),
+  tool(
+    "text",
+    "Text Repeater",
+    "/text-repeater/",
+    "Repeat text multiple times with line separation."
+  ),
+
+  tool(
+    "developer",
+    "SHA-1 Generator",
+    "/sha1-generator/",
+    "Generate a SHA-1 digest from text using Web Crypto."
+  ),
+  tool(
+    "developer",
+    "SHA-512 Generator",
+    "/sha512-generator/",
+    "Generate a SHA-512 digest from text using Web Crypto."
+  ),
+  tool(
+    "developer",
+    "HTML Encoder & Decoder",
+    "/html-encoder-decoder/",
+    "Encode HTML special characters or decode HTML entities."
+  ),
+  tool(
+    "developer",
+    "JWT Decoder",
+    "/jwt-decoder/",
+    "Decode JWT header and payload data without verifying its signature."
+  ),
+  tool(
+    "developer",
+    "Query String Parser",
+    "/query-string-parser/",
+    "Convert a URL query string into formatted JSON."
+  ),
+  tool(
+    "developer",
+    "Hex Text Converter",
+    "/hex-text-converter/",
+    "Convert UTF-8 text to hexadecimal or hex back to text."
+  ),
+  tool(
+    "developer",
+    "Number Base Converter",
+    "/number-base-converter/",
+    "Convert integers between binary, octal, decimal, and hexadecimal."
+  ),
+  tool(
+    "developer",
+    "Regex Tester",
+    "/regex-tester/",
+    "Test JavaScript regular expressions against text."
+  ),
+
+  tool(
+    "image",
+    "Sepia Image",
+    "/sepia-image/",
+    "Apply a sepia effect to JPG, PNG, or WebP images."
+  ),
+  tool(
+    "image",
+    "Invert Image",
+    "/invert-image/",
+    "Invert image colors directly in your browser."
+  ),
+  tool(
+    "image",
+    "Blur Image",
+    "/blur-image/",
+    "Apply adjustable blur to JPG, PNG, or WebP images."
+  ),
+
+  tool(
+    "pdf",
+    "Reverse PDF Pages",
+    "/reverse-pdf-pages/",
+    "Reverse the order of every page in a PDF."
+  ),
+  tool(
+    "pdf",
+    "Duplicate PDF Pages",
+    "/duplicate-pdf-pages/",
+    "Duplicate a selected PDF page one or more times."
+  ),
+  tool(
+    "pdf",
+    "Insert Blank PDF Page",
+    "/insert-blank-pdf-page/",
+    "Insert a blank page at a selected position in a PDF."
+  ),];
 
 export function toolsByCategory(
   category
