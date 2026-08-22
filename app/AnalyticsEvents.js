@@ -38,6 +38,16 @@ const pdfToolPaths = new Set([
   "/images-to-pdf/",
   "/jpg-to-pdf/",
   "/png-to-pdf/",
+  "/compress-pdf/",
+  "/pdf-to-jpg/",
+  "/pdf-to-png/",
+  "/remove-pdf-pages/",
+  "/add-page-numbers/",
+  "/watermark-pdf/",
+  "/crop-pdf/",
+  "/organize-pdf/",
+  "/sign-pdf/",
+  "/pdf-metadata-editor/",
 ]);
 
 const textToolPaths = new Set([
@@ -56,86 +66,51 @@ const developerToolPaths = new Set([
 
 export default function AnalyticsEvents() {
   useEffect(() => {
-    function detectToolType(path) {
-      if (
-        calculatorPaths.has(path)
-      ) {
-        return "calculator";
-      }
-
-      if (
-        imageToolPaths.has(path)
-      ) {
-        return "image";
-      }
-
-      if (
-        pdfToolPaths.has(path)
-      ) {
-        return "pdf";
-      }
-
-      if (
-        textToolPaths.has(path)
-      ) {
-        return "text";
-      }
-
-      if (
-        developerToolPaths.has(path)
-      ) {
-        return "developer";
-      }
+    function toolType(path) {
+      if (calculatorPaths.has(path)) return "calculator";
+      if (imageToolPaths.has(path)) return "image";
+      if (pdfToolPaths.has(path)) return "pdf";
+      if (textToolPaths.has(path)) return "text";
+      if (developerToolPaths.has(path)) return "developer";
 
       return null;
     }
 
-    function trackToolUse(event) {
+    function handle(event) {
       const target =
         event.target;
 
-      const inputEvent =
-        target instanceof
-          HTMLInputElement ||
-        target instanceof
-          HTMLSelectElement ||
-        target instanceof
-          HTMLTextAreaElement;
+      const input =
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLSelectElement ||
+        target instanceof HTMLTextAreaElement;
 
-      const buttonEvent =
-        target instanceof
-          Element &&
+      const button =
+        target instanceof Element &&
         Boolean(
-          target.closest(
-            "button"
-          )
+          target.closest("button")
         );
 
-      if (
-        !inputEvent &&
-        !buttonEvent
-      ) {
+      if (!input && !button) {
         return;
       }
 
       const path =
         window.location.pathname;
 
-      const toolType =
-        detectToolType(path);
+      const type =
+        toolType(path);
 
-      if (!toolType) {
+      if (!type) {
         return;
       }
 
-      const sessionKey =
+      const key =
         `solotools_tool_used:${path}`;
 
       try {
         if (
-          sessionStorage.getItem(
-            sessionKey
-          )
+          sessionStorage.getItem(key)
         ) {
           return;
         }
@@ -153,30 +128,26 @@ export default function AnalyticsEvents() {
         "event",
         "tool_used",
         {
-          tool_type:
-            toolType,
-          tool_path:
-            path,
+          tool_type: type,
+          tool_path: path,
         }
       );
 
       if (
-        toolType ===
-        "calculator"
+        type === "calculator"
       ) {
         window.gtag(
           "event",
           "calculator_used",
           {
-            tool_path:
-              path,
+            tool_path: path,
           }
         );
       }
 
       try {
         sessionStorage.setItem(
-          sessionKey,
+          key,
           "1"
         );
       } catch {
@@ -185,26 +156,26 @@ export default function AnalyticsEvents() {
 
     document.addEventListener(
       "change",
-      trackToolUse,
+      handle,
       true
     );
 
     document.addEventListener(
       "click",
-      trackToolUse,
+      handle,
       true
     );
 
     return () => {
       document.removeEventListener(
         "change",
-        trackToolUse,
+        handle,
         true
       );
 
       document.removeEventListener(
         "click",
-        trackToolUse,
+        handle,
         true
       );
     };

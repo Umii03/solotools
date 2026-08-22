@@ -39,17 +39,27 @@ const categories = [
     name: "PDF Tools",
     href: "/pdf-tools/",
     description:
-      "Merge, split, rotate, reorder, inspect, and create PDFs.",
+      "Convert, compress, organize, edit, inspect, and create PDFs.",
     tools: [
       ["Merge PDF", "/merge-pdf/"],
       ["Split PDF", "/split-pdf/"],
       ["Extract PDF Pages", "/extract-pdf-pages/"],
+      ["Remove PDF Pages", "/remove-pdf-pages/"],
+      ["Organize PDF", "/organize-pdf/"],
       ["Rotate PDF", "/rotate-pdf/"],
       ["Reorder PDF Pages", "/reorder-pdf-pages/"],
-      ["PDF Page Counter & Info", "/pdf-page-counter/"],
+      ["Compress PDF", "/compress-pdf/"],
+      ["Crop PDF", "/crop-pdf/"],
+      ["Add Page Numbers", "/add-page-numbers/"],
+      ["Watermark PDF", "/watermark-pdf/"],
+      ["Sign PDF", "/sign-pdf/"],
+      ["PDF Metadata Editor", "/pdf-metadata-editor/"],
+      ["PDF to JPG", "/pdf-to-jpg/"],
+      ["PDF to PNG", "/pdf-to-png/"],
       ["Images to PDF", "/images-to-pdf/"],
       ["JPG to PDF", "/jpg-to-pdf/"],
       ["PNG to PDF", "/png-to-pdf/"],
+      ["PDF Page Counter & Info", "/pdf-page-counter/"],
     ],
   },
   {
@@ -67,7 +77,7 @@ const categories = [
     name: "Developer Tools",
     href: "/developer-tools/",
     description:
-      "Format, encode, decode, generate, and validate common development data.",
+      "Format, encode, decode, generate, and validate development data.",
     tools: [
       ["JSON Formatter & Validator", "/json-formatter/"],
       ["URL Encoder & Decoder", "/url-encoder-decoder/"],
@@ -90,14 +100,12 @@ const allTools =
   );
 
 export default function ToolsPage() {
-  const structuredData = {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "SoloTools - All Tools",
     url:
       "https://solotools-1ou.pages.dev/tools/",
-    description:
-      "A directory of free calculators and browser-based utilities.",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems:
@@ -124,17 +132,14 @@ export default function ToolsPage() {
         dangerouslySetInnerHTML={{
           __html:
             JSON.stringify(
-              structuredData
+              schema
             ),
         }}
       />
 
       <header className="border-b border-slate-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-          <a
-            href="/"
-            aria-label="SoloTools home"
-          >
+          <a href="/">
             <img
               src="/solotools-logo.png"
               alt="SoloTools"
@@ -152,10 +157,6 @@ export default function ToolsPage() {
 
             <a href="/calculators/">
               Calculators
-            </a>
-
-            <a href="/image-tools/">
-              Images
             </a>
 
             <a href="/pdf-tools/">
@@ -180,13 +181,7 @@ export default function ToolsPage() {
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Browse {allTools.length} free calculators and browser-based
-            utilities for images, PDFs, text, development, finance,
-            business, and freelance work.
-          </p>
-
-          <p className="mt-3 text-sm font-medium text-slate-500">
-            No account required.
+            Browse {allTools.length} free calculators and browser-based utilities.
           </p>
         </div>
 
@@ -222,7 +217,7 @@ export default function ToolsPage() {
                       <a
                         key={href}
                         href={href}
-                        className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold transition hover:border-slate-400 hover:text-blue-700"
+                        className="rounded-2xl border border-slate-200 bg-white p-4 font-semibold hover:border-slate-400 hover:text-blue-700"
                       >
                         {name}
                       </a>
@@ -234,53 +229,6 @@ export default function ToolsPage() {
           )}
         </div>
       </section>
-
-      <section className="border-y border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-4xl px-5 py-12">
-          <h2 className="text-3xl font-bold">
-            One directory for every SoloTools utility
-          </h2>
-
-          <p className="mt-4 leading-7 text-slate-600">
-            This page links directly to every current SoloTools tool,
-            making it easier for visitors and search engines to discover
-            related calculators and browser utilities.
-          </p>
-
-          <a
-            href="/guides/"
-            className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
-          >
-            Browse practical guides -&gt;
-          </a>
-        </div>
-      </section>
-
-      <footer className="border-t border-slate-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between">
-          <p>
-            SoloTools - free practical online tools.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a href="/about/">
-              About
-            </a>
-
-            <a href="/contact/">
-              Contact
-            </a>
-
-            <a href="/privacy-policy/">
-              Privacy
-            </a>
-
-            <a href="/terms/">
-              Terms
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }

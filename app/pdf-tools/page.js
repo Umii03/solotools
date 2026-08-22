@@ -1,14 +1,14 @@
 export const metadata = {
   title: "Free Online PDF Tools",
   description:
-    "Free browser-based PDF tools to merge, split, rotate, reorder, extract pages, inspect PDFs, and convert JPG or PNG images to PDF.",
+    "Free browser PDF tools to merge, split, compress, convert, organize, rotate, crop, watermark, sign, inspect, and edit PDF files.",
   alternates: {
     canonical: "/pdf-tools/",
   },
   openGraph: {
     title: "Free Online PDF Tools | SoloTools",
     description:
-      "Merge, split, rotate, reorder, inspect, and create PDFs directly in your browser.",
+      "Browser-based PDF utilities for everyday document work.",
     url:
       "https://solotools-1ou.pages.dev/pdf-tools/",
     type: "website",
@@ -16,64 +16,32 @@ export const metadata = {
 };
 
 const tools = [
-  {
-    title: "Merge PDF",
-    href: "/merge-pdf/",
-    description:
-      "Combine multiple PDFs into one document.",
-  },
-  {
-    title: "Split PDF",
-    href: "/split-pdf/",
-    description:
-      "Split one PDF into two separate files.",
-  },
-  {
-    title: "Extract PDF Pages",
-    href: "/extract-pdf-pages/",
-    description:
-      "Create a new PDF from selected pages.",
-  },
-  {
-    title: "Rotate PDF",
-    href: "/rotate-pdf/",
-    description:
-      "Rotate all or selected PDF pages.",
-  },
-  {
-    title: "Reorder PDF Pages",
-    href: "/reorder-pdf-pages/",
-    description:
-      "Change the page sequence of a PDF.",
-  },
-  {
-    title: "PDF Page Counter & Info",
-    href: "/pdf-page-counter/",
-    description:
-      "Check page count and document metadata.",
-  },
-  {
-    title: "Images to PDF",
-    href: "/images-to-pdf/",
-    description:
-      "Turn JPG and PNG images into one PDF.",
-  },
-  {
-    title: "JPG to PDF",
-    href: "/jpg-to-pdf/",
-    description:
-      "Convert JPG images into a PDF document.",
-  },
-  {
-    title: "PNG to PDF",
-    href: "/png-to-pdf/",
-    description:
-      "Convert PNG images into a PDF document.",
-  },
+  ["Merge PDF", "/merge-pdf/", "Combine PDFs into one file.", "Organize"],
+  ["Split PDF", "/split-pdf/", "Split one PDF into two files.", "Organize"],
+  ["Extract PDF Pages", "/extract-pdf-pages/", "Create a PDF from selected pages.", "Organize"],
+  ["Remove PDF Pages", "/remove-pdf-pages/", "Delete unwanted PDF pages.", "Organize"],
+  ["Organize PDF", "/organize-pdf/", "Reorder, rotate, and delete pages visually.", "Organize"],
+  ["Rotate PDF", "/rotate-pdf/", "Rotate all or selected pages.", "Organize"],
+  ["Reorder PDF Pages", "/reorder-pdf-pages/", "Change page sequence by entering an order.", "Organize"],
+
+  ["Compress PDF", "/compress-pdf/", "Reduce PDF file size in your browser.", "Optimize"],
+  ["Crop PDF", "/crop-pdf/", "Adjust the visible crop area of PDF pages.", "Optimize"],
+  ["Add Page Numbers", "/add-page-numbers/", "Add configurable page numbers.", "Edit"],
+  ["Watermark PDF", "/watermark-pdf/", "Add text watermarks to every page.", "Edit"],
+  ["Sign PDF", "/sign-pdf/", "Place a signature image onto a PDF page.", "Edit"],
+  ["PDF Metadata Editor", "/pdf-metadata-editor/", "Edit title, author, subject, and keywords.", "Edit"],
+
+  ["PDF to JPG", "/pdf-to-jpg/", "Convert PDF pages into JPG images.", "Convert"],
+  ["PDF to PNG", "/pdf-to-png/", "Convert PDF pages into PNG images.", "Convert"],
+  ["Images to PDF", "/images-to-pdf/", "Turn JPG and PNG images into a PDF.", "Convert"],
+  ["JPG to PDF", "/jpg-to-pdf/", "Convert JPG images into a PDF.", "Convert"],
+  ["PNG to PDF", "/png-to-pdf/", "Convert PNG images into a PDF.", "Convert"],
+
+  ["PDF Page Counter & Info", "/pdf-page-counter/", "Check PDF page count and metadata.", "Inspect"],
 ];
 
 export default function PdfToolsPage() {
-  const structuredData = {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "SoloTools PDF Tools",
@@ -85,12 +53,10 @@ export default function PdfToolsPage() {
         tools.map(
           (tool, index) => ({
             "@type": "ListItem",
-            position:
-              index + 1,
-            name:
-              tool.title,
+            position: index + 1,
+            name: tool[0],
             url:
-              `https://solotools-1ou.pages.dev${tool.href}`,
+              `https://solotools-1ou.pages.dev${tool[1]}`,
           })
         ),
     },
@@ -103,17 +69,14 @@ export default function PdfToolsPage() {
         dangerouslySetInnerHTML={{
           __html:
             JSON.stringify(
-              structuredData
+              schema
             ),
         }}
       />
 
       <header className="border-b border-slate-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-          <a
-            href="/"
-            aria-label="SoloTools home"
-          >
+          <a href="/">
             <img
               src="/solotools-logo.png"
               alt="SoloTools"
@@ -133,8 +96,8 @@ export default function PdfToolsPage() {
               Image Tools
             </a>
 
-            <a href="/calculators/">
-              Calculators
+            <a href="/tools/">
+              All Tools
             </a>
           </nav>
         </div>
@@ -151,28 +114,33 @@ export default function PdfToolsPage() {
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Merge, split, rotate, reorder,
-            inspect, and create PDFs directly
-            in your browser. No account
-            required.
+            Merge, split, compress, convert, organize, edit, and inspect
+            PDFs directly in your browser.
+          </p>
+
+          <p className="mt-3 text-sm font-semibold text-green-700">
+            Supported operations process files locally on your device.
           </p>
         </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
           {tools.map(
-            (tool) => (
+            ([title, href, description, category]) => (
               <a
-                key={tool.href}
-                href={tool.href}
+                key={href}
+                href={href}
                 className="rounded-3xl border border-slate-200 bg-slate-50 p-6 transition hover:border-slate-400 hover:bg-white"
               >
-                <h2 className="text-xl font-bold">
-                  {tool.title}
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                  {category}
+                </p>
+
+                <h2 className="mt-2 text-xl font-bold">
+                  {title}
                 </h2>
 
                 <p className="mt-3 leading-7 text-slate-600">
-                  {tool.description}
+                  {description}
                 </p>
 
                 <span className="mt-5 inline-flex font-semibold text-blue-700">
@@ -183,48 +151,6 @@ export default function PdfToolsPage() {
           )}
         </div>
       </section>
-
-      <section className="border-y border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-4xl px-5 py-12">
-          <h2 className="text-3xl font-bold">
-            PDF processing in your browser
-          </h2>
-
-          <p className="mt-4 leading-7 text-slate-600">
-            Supported PDF operations run
-            locally on your device. Selected
-            documents and images do not need
-            to be uploaded to a SoloTools
-            conversion server.
-          </p>
-        </div>
-      </section>
-
-      <footer className="border-t border-slate-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between">
-          <p>
-            SoloTools - free practical online tools.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a href="/about/">
-              About
-            </a>
-
-            <a href="/contact/">
-              Contact
-            </a>
-
-            <a href="/privacy-policy/">
-              Privacy
-            </a>
-
-            <a href="/terms/">
-              Terms
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
