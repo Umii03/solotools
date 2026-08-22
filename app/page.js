@@ -225,6 +225,27 @@
           </a>
         </div>
       </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-10">
+        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            Browse all tools
+          </p>
+          <h2 className="mt-2 text-2xl font-bold">
+            Free Online Calculators
+          </h2>
+          <p className="mt-3 max-w-2xl leading-7 text-slate-600">
+            Explore salary, freelance pricing, project cost, and income
+            calculators in one place.
+          </p>
+          <a
+            href="/calculators/"
+            className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
+          >
+            Browse all calculators →
+          </a>
+        </div>
+      </section>
 </main>
   );
 }
