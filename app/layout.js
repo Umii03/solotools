@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import AnalyticsEvents from "./AnalyticsEvents";
 import GlobalThemeToggle from "./components/GlobalThemeToggle";
+import GlobalMotionEffects from "./components/GlobalMotionEffects";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -98,6 +99,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <GlobalMotionEffects />
 
         <GlobalThemeToggle />
 

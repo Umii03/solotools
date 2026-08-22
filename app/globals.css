@@ -293,3 +293,291 @@ summary {
       none;
   }
 }
+/* ================================================================
+   SOLOTOOLS GLOBAL MOTION SYSTEM
+   ================================================================ */
+
+.st-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 2px;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #8b5cf6,
+      #06b6d4
+    );
+  box-shadow:
+    0 0 14px
+    rgba(59, 130, 246, 0.55);
+}
+
+.st-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  width: 360px;
+  height: 360px;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle,
+      rgba(59, 130, 246, 0.09)
+        0%,
+      rgba(139, 92, 246, 0.045)
+        35%,
+      transparent
+        70%
+    );
+  filter: blur(5px);
+  transition:
+    opacity 260ms ease;
+}
+
+.dark .st-cursor-glow {
+  background:
+    radial-gradient(
+      circle,
+      rgba(96, 165, 250, 0.13)
+        0%,
+      rgba(139, 92, 246, 0.07)
+        38%,
+      transparent
+        72%
+    );
+}
+
+.st-fine-pointer
+.st-cursor-glow.st-cursor-visible {
+  opacity: 1;
+}
+
+.st-motion-enabled
+.st-reveal {
+  opacity: 0;
+  transform:
+    translateY(28px);
+}
+
+.st-motion-enabled
+.st-reveal.st-visible {
+  opacity: 1;
+  transform:
+    translateY(0);
+  transition:
+    opacity 700ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      ),
+    transform 700ms
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+}
+
+.st-interactive-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.st-interactive-card:hover {
+  transform:
+    translateY(-3px);
+}
+
+.dark
+.st-interactive-card:hover {
+  box-shadow:
+    0 18px 45px
+    rgba(0, 0, 0, 0.18);
+}
+
+.st-tilt-card {
+  position: relative;
+  overflow: hidden;
+  transform-style:
+    preserve-3d;
+}
+
+.st-tilt-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle
+        at
+        var(--st-shine-x, 50%)
+        var(--st-shine-y, 50%),
+      rgba(255, 255, 255, 0.22),
+      transparent 42%
+    );
+  transition:
+    opacity 200ms ease;
+}
+
+.dark
+.st-tilt-card::after {
+  background:
+    radial-gradient(
+      circle
+        at
+        var(--st-shine-x, 50%)
+        var(--st-shine-y, 50%),
+      rgba(96, 165, 250, 0.14),
+      transparent 44%
+    );
+}
+
+.st-tilt-card.st-tilting {
+  transform:
+    perspective(950px)
+    rotateX(
+      var(--st-rx, 0deg)
+    )
+    rotateY(
+      var(--st-ry, 0deg)
+    )
+    translateY(-5px);
+}
+
+.st-tilt-card.st-tilting::after {
+  opacity: 1;
+}
+
+/* Button shimmer without changing existing layouts */
+
+.st-motion-enabled
+button.bg-blue-600,
+.st-motion-enabled
+a.bg-blue-600 {
+  position: relative;
+  overflow: hidden;
+}
+
+.st-motion-enabled
+button.bg-blue-600::after,
+.st-motion-enabled
+a.bg-blue-600::after {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: -45%;
+  width: 30%;
+  height: 260%;
+  pointer-events: none;
+  transform:
+    rotate(22deg)
+    translateX(-220%);
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.24),
+      transparent
+    );
+}
+
+.st-motion-enabled
+button.bg-blue-600:hover::after,
+.st-motion-enabled
+a.bg-blue-600:hover::after {
+  transform:
+    rotate(22deg)
+    translateX(620%);
+  transition:
+    transform 700ms ease;
+}
+
+/*
+  Upload areas receive a subtle glow
+  without requiring every tool page
+  to be rewritten.
+*/
+
+.st-motion-enabled
+.border-dashed {
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.st-motion-enabled
+.border-dashed:hover {
+  border-color:
+    rgba(59, 130, 246, 0.7);
+  box-shadow:
+    0 16px 45px
+    rgba(37, 99, 235, 0.08);
+  transform:
+    translateY(-2px);
+}
+
+.dark
+.st-motion-enabled
+.border-dashed:hover {
+  box-shadow:
+    0 16px 45px
+    rgba(59, 130, 246, 0.1);
+}
+
+@media (
+  pointer: coarse
+) {
+  .st-cursor-glow {
+    display: none;
+  }
+}
+
+@media (
+  prefers-reduced-motion:
+  reduce
+) {
+  .st-cursor-glow {
+    display: none;
+  }
+
+  .st-motion-enabled
+  .st-reveal,
+  .st-motion-enabled
+  .st-reveal.st-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .st-tilt-card,
+  .st-tilt-card.st-tilting,
+  .st-interactive-card:hover {
+    transform: none;
+  }
+
+  .st-motion-enabled
+  button.bg-blue-600::after,
+  .st-motion-enabled
+  a.bg-blue-600::after {
+    display: none;
+  }
+}
