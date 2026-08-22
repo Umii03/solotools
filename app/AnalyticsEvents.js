@@ -33,6 +33,20 @@ const pdfToolPaths = new Set([
   "/png-to-pdf/",
 ]);
 
+const textToolPaths = new Set([
+  "/word-counter/",
+  "/character-counter/",
+  "/case-converter/",
+]);
+
+const developerToolPaths = new Set([
+  "/json-formatter/",
+  "/url-encoder-decoder/",
+  "/base64-encoder-decoder/",
+  "/uuid-generator/",
+  "/qr-code-generator/",
+]);
+
 export default function AnalyticsEvents() {
   useEffect(() => {
     function handleInteraction(event) {
@@ -59,20 +73,27 @@ export default function AnalyticsEvents() {
       if (
         calculatorPaths.has(path)
       ) {
-        toolType =
-          "calculator";
+        toolType = "calculator";
 
       } else if (
         imageToolPaths.has(path)
       ) {
-        toolType =
-          "image";
+        toolType = "image";
 
       } else if (
         pdfToolPaths.has(path)
       ) {
-        toolType =
-          "pdf";
+        toolType = "pdf";
+
+      } else if (
+        textToolPaths.has(path)
+      ) {
+        toolType = "text";
+
+      } else if (
+        developerToolPaths.has(path)
+      ) {
+        toolType = "developer";
 
       } else {
         return;

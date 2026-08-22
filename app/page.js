@@ -131,7 +131,7 @@ export default function Home() {
                 </p>
 
                 <p className="mt-5 font-semibold text-blue-600">
-                  Use Calculator →
+                  Use Calculator â†’
                 </p>
               </a>
             ))}
@@ -170,7 +170,7 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-5 font-semibold text-blue-600">
-                  Read Guide →
+                  Read Guide â†’
                 </p>
               </a>
             ))}
@@ -194,7 +194,7 @@ export default function Home() {
 
       <footer className="bg-slate-950 px-6 py-10 text-sm text-slate-400">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-5">
-          <p>© 2026 SoloTools.</p>
+          <p>Â© 2026 SoloTools.</p>
 
           <div className="flex flex-wrap gap-5">
             <a href="/about/">About</a>
@@ -242,7 +242,7 @@ export default function Home() {
             href="/calculators/"
             className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
           >
-            Browse all calculators →
+            Browse all calculators â†’
           </a>
         </div>
       </section>
@@ -291,6 +291,52 @@ export default function Home() {
           >
             Browse PDF Tools -&gt;
           </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-10">
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+              Writing utilities
+            </p>
+
+            <h2 className="mt-2 text-2xl font-bold">
+              Text Tools
+            </h2>
+
+            <p className="mt-3 leading-7 text-slate-600">
+              Count words and characters or convert text between common case styles.
+            </p>
+
+            <a
+              href="/text-tools/"
+              className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
+            >
+              Browse Text Tools -&gt;
+            </a>
+          </div>
+
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+              Developer utilities
+            </p>
+
+            <h2 className="mt-2 text-2xl font-bold">
+              Developer Tools
+            </h2>
+
+            <p className="mt-3 leading-7 text-slate-600">
+              Format JSON, encode URLs and Base64, generate UUIDs, and create QR codes.
+            </p>
+
+            <a
+              href="/developer-tools/"
+              className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
+            >
+              Browse Developer Tools -&gt;
+            </a>
+          </div>
         </div>
       </section>
 </main>
