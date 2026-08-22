@@ -22,7 +22,7 @@ export default function GlobalThemeToggle() {
   }
 
   return (
-    <div className="fixed bottom-5 right-5 z-[100] rounded-2xl bg-white/70 p-1 shadow-xl ring-1 ring-slate-900/5 backdrop-blur-xl dark:bg-slate-950/70 dark:ring-white/10">
+    <div className="fixed right-4 top-20 z-[110] rounded-2xl bg-white/80 p-1 shadow-xl ring-1 ring-slate-900/5 backdrop-blur-xl dark:bg-slate-950/80 dark:ring-white/10 sm:right-5">
       <ThemeToggle compact />
     </div>
   );

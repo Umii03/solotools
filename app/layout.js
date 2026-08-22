@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import AnalyticsEvents from "./AnalyticsEvents";
 import GlobalThemeToggle from "./components/GlobalThemeToggle";
+import BackToTopButton from "./components/BackToTopButton";
 import GlobalMotionEffects from "./components/GlobalMotionEffects";
 import "./globals.css";
 
@@ -103,6 +104,8 @@ export default function RootLayout({ children }) {
         <GlobalMotionEffects />
 
         <GlobalThemeToggle />
+
+        <BackToTopButton />
 
         <AnalyticsEvents />
 
