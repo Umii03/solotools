@@ -7,6 +7,13 @@ const calculatorPaths = new Set([
   "/project-price-calculator/",
   "/freelance-income-calculator/",
   "/salary-to-hourly-calculator/",
+  "/percentage-calculator/",
+  "/discount-calculator/",
+  "/profit-margin-calculator/",
+  "/loan-calculator/",
+  "/age-calculator/",
+  "/date-difference-calculator/",
+  "/vat-calculator/",
 ]);
 
 const imageToolPaths = new Set([
@@ -49,11 +56,45 @@ const developerToolPaths = new Set([
 
 export default function AnalyticsEvents() {
   useEffect(() => {
-    function handleInteraction(event) {
+    function detectToolType(path) {
+      if (
+        calculatorPaths.has(path)
+      ) {
+        return "calculator";
+      }
+
+      if (
+        imageToolPaths.has(path)
+      ) {
+        return "image";
+      }
+
+      if (
+        pdfToolPaths.has(path)
+      ) {
+        return "pdf";
+      }
+
+      if (
+        textToolPaths.has(path)
+      ) {
+        return "text";
+      }
+
+      if (
+        developerToolPaths.has(path)
+      ) {
+        return "developer";
+      }
+
+      return null;
+    }
+
+    function trackToolUse(event) {
       const target =
         event.target;
 
-      const isUsefulInput =
+      const inputEvent =
         target instanceof
           HTMLInputElement ||
         target instanceof
@@ -61,41 +102,29 @@ export default function AnalyticsEvents() {
         target instanceof
           HTMLTextAreaElement;
 
-      if (!isUsefulInput) {
+      const buttonEvent =
+        target instanceof
+          Element &&
+        Boolean(
+          target.closest(
+            "button"
+          )
+        );
+
+      if (
+        !inputEvent &&
+        !buttonEvent
+      ) {
         return;
       }
 
       const path =
         window.location.pathname;
 
-      let toolType = null;
+      const toolType =
+        detectToolType(path);
 
-      if (
-        calculatorPaths.has(path)
-      ) {
-        toolType = "calculator";
-
-      } else if (
-        imageToolPaths.has(path)
-      ) {
-        toolType = "image";
-
-      } else if (
-        pdfToolPaths.has(path)
-      ) {
-        toolType = "pdf";
-
-      } else if (
-        textToolPaths.has(path)
-      ) {
-        toolType = "text";
-
-      } else if (
-        developerToolPaths.has(path)
-      ) {
-        toolType = "developer";
-
-      } else {
+      if (!toolType) {
         return;
       }
 
@@ -156,14 +185,26 @@ export default function AnalyticsEvents() {
 
     document.addEventListener(
       "change",
-      handleInteraction,
+      trackToolUse,
+      true
+    );
+
+    document.addEventListener(
+      "click",
+      trackToolUse,
       true
     );
 
     return () => {
       document.removeEventListener(
         "change",
-        handleInteraction,
+        trackToolUse,
+        true
+      );
+
+      document.removeEventListener(
+        "click",
+        trackToolUse,
         true
       );
     };

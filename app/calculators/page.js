@@ -1,30 +1,79 @@
-﻿export default function CalculatorsPage() {
+export default function CalculatorsPage() {
   const calculators = [
     {
       title: "Salary to Hourly Calculator",
       description:
-        "Convert an annual salary to hourly pay or convert an hourly rate into an estimated annual salary.",
+        "Convert annual salary to hourly pay or hourly rate to annual salary.",
       href: "/salary-to-hourly-calculator/",
-      label: "Salary & Pay",
+      label: "Salary",
+    },
+    {
+      title: "Percentage Calculator",
+      description:
+        "Calculate percentages, percentage ratios, increases, and decreases.",
+      href: "/percentage-calculator/",
+      label: "Everyday",
+    },
+    {
+      title: "Discount Calculator",
+      description:
+        "Calculate sale discounts, savings, and final prices.",
+      href: "/discount-calculator/",
+      label: "Shopping",
+    },
+    {
+      title: "Profit Margin Calculator",
+      description:
+        "Calculate profit, margin percentage, and markup.",
+      href: "/profit-margin-calculator/",
+      label: "Business",
+    },
+    {
+      title: "Loan Calculator",
+      description:
+        "Estimate monthly payments, total repayment, and interest.",
+      href: "/loan-calculator/",
+      label: "Finance",
+    },
+    {
+      title: "Age Calculator",
+      description:
+        "Calculate age in years, months, days, and total elapsed days.",
+      href: "/age-calculator/",
+      label: "Date",
+    },
+    {
+      title: "Date Difference Calculator",
+      description:
+        "Find the number of days, weeks, and hours between two dates.",
+      href: "/date-difference-calculator/",
+      label: "Date",
+    },
+    {
+      title: "VAT Calculator",
+      description:
+        "Add VAT to net prices or extract VAT from gross amounts.",
+      href: "/vat-calculator/",
+      label: "Business",
     },
     {
       title: "Freelance Hourly Rate Calculator",
       description:
-        "Estimate a sustainable freelance hourly rate based on income goals, expenses, taxes, and billable time.",
+        "Estimate a sustainable freelance hourly rate from income goals and billable time.",
       href: "/freelance-hourly-rate-calculator/",
       label: "Freelance",
     },
     {
       title: "Project Price Calculator",
       description:
-        "Estimate a profitable freelance project quote using hours, expenses, contingency, and profit margin.",
+        "Estimate a profitable freelance project price from hours, costs, and margin.",
       href: "/project-price-calculator/",
       label: "Freelance",
     },
     {
       title: "Freelance Income Calculator",
       description:
-        "Estimate annual revenue, business expenses, taxes, monthly income, and take-home freelance earnings.",
+        "Estimate freelance revenue, expenses, taxes, and take-home income.",
       href: "/freelance-income-calculator/",
       label: "Freelance",
     },
@@ -37,7 +86,6 @@
           <a
             href="/"
             aria-label="SoloTools home"
-            className="inline-flex items-center"
           >
             <img
               src="/solotools-logo.png"
@@ -46,12 +94,24 @@
             />
           </a>
 
-          <nav className="flex gap-4 text-sm font-medium text-slate-600">
-            <a href="/calculators/" className="text-slate-950">
+          <nav className="flex flex-wrap gap-4 text-sm font-medium text-slate-600">
+            <a
+              href="/calculators/"
+              className="text-slate-950"
+            >
               Calculators
             </a>
-            <a href="/guides/" className="hover:text-slate-950">
-              Guides
+
+            <a href="/image-tools/">
+              Image Tools
+            </a>
+
+            <a href="/pdf-tools/">
+              PDF Tools
+            </a>
+
+            <a href="/text-tools/">
+              Text Tools
             </a>
           </nav>
         </div>
@@ -68,99 +128,74 @@
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Free calculators for salary conversions, freelance pricing,
-            project estimates, and income planning. No signup required.
+            Free calculators for salary, percentages, discounts, loans,
+            dates, VAT, business margins, and freelance planning.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          {calculators.map((calculator) => (
-            <a
-              key={calculator.href}
-              href={calculator.href}
-              className="group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition hover:border-slate-400 hover:bg-white"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
-                {calculator.label}
-              </p>
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {calculators.map(
+            (calculator) => (
+              <a
+                key={calculator.href}
+                href={calculator.href}
+                className="group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition hover:border-slate-400 hover:bg-white"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                  {calculator.label}
+                </p>
 
-              <h2 className="mt-2 text-xl font-bold group-hover:text-blue-700">
-                {calculator.title}
-              </h2>
+                <h2 className="mt-2 text-xl font-bold group-hover:text-blue-700">
+                  {calculator.title}
+                </h2>
 
-              <p className="mt-3 leading-7 text-slate-600">
-                {calculator.description}
-              </p>
+                <p className="mt-3 leading-7 text-slate-600">
+                  {calculator.description}
+                </p>
 
-              <span className="mt-5 inline-flex font-semibold text-blue-700">
-                Open calculator →
-              </span>
-            </a>
-          ))}
+                <span className="mt-5 inline-flex font-semibold text-blue-700">
+                  Open calculator -&gt;
+                </span>
+              </a>
+            )
+          )}
         </div>
       </section>
 
       <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-4xl px-5 py-12">
           <h2 className="text-3xl font-bold">
-            What can you calculate with SoloTools?
+            Practical calculators for everyday tasks
           </h2>
 
-          <div className="mt-7 space-y-6 text-slate-600">
-            <p className="leading-7">
-              SoloTools provides browser-based calculators designed to make
-              common work, salary, and freelance calculations easier to
-              understand.
-            </p>
-
-            <p className="leading-7">
-              You can convert salary to hourly pay, estimate a freelance hourly
-              rate, calculate a project price, and plan expected freelance
-              income using simple adjustable inputs.
-            </p>
-
-            <p className="leading-7">
-              More calculators will be added over time for everyday finance,
-              percentages, dates, business calculations, and other practical
-              tasks.
-            </p>
-          </div>
+          <p className="mt-4 leading-7 text-slate-600">
+            SoloTools combines everyday calculators with specialized
+            freelance tools. Calculations run directly in the browser and
+            do not require an account.
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-5 py-12">
-        <h2 className="text-2xl font-bold">
-          Need help with freelance pricing?
-        </h2>
-
-        <p className="mt-3 leading-7 text-slate-600">
-          Browse practical guides covering freelance rates, billable hours,
-          pricing mistakes, project estimates, and income planning.
-        </p>
-
-        <a
-          href="/guides/"
-          className="mt-5 inline-flex font-semibold text-blue-700 hover:underline"
-        >
-          Browse freelance guides →
-        </a>
-      </section>
-
       <footer className="border-t border-slate-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>SoloTools - free practical online tools.</p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between">
+          <p>
+            SoloTools - free practical online tools.
+          </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="/about/" className="hover:text-slate-900">
+            <a href="/about/">
               About
             </a>
-            <a href="/contact/" className="hover:text-slate-900">
+
+            <a href="/contact/">
               Contact
             </a>
-            <a href="/privacy-policy/" className="hover:text-slate-900">
+
+            <a href="/privacy-policy/">
               Privacy
             </a>
-            <a href="/terms/" className="hover:text-slate-900">
+
+            <a href="/terms/">
               Terms
             </a>
           </div>
