@@ -1,6 +1,7 @@
-﻿import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import AnalyticsEvents from "./AnalyticsEvents";
+import GlobalThemeToggle from "./components/GlobalThemeToggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -59,8 +60,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <Script
+          id="solotools-theme-init"
+          strategy="beforeInteractive"
+        >
+          {`
+            try {
+              var savedTheme = localStorage.getItem('solotools-theme');
+              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              var useDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+              document.documentElement.classList.toggle('dark', useDark);
+            } catch (e) {}
+          `}
+        </Script>
         <link
           rel="icon"
           type="image/png"
@@ -83,6 +98,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <GlobalThemeToggle />
 
         <AnalyticsEvents />
 
