@@ -22,8 +22,12 @@ export default function GlobalThemeToggle() {
   }
 
   return (
-    <div className="fixed right-4 top-20 z-[110] rounded-2xl bg-white/80 p-1 shadow-xl ring-1 ring-slate-900/5 backdrop-blur-xl dark:bg-slate-950/80 dark:ring-white/10 sm:right-5">
-      <ThemeToggle compact />
+    <div className="pointer-events-none absolute left-1/2 top-[14px] z-[110] w-full max-w-7xl -translate-x-1/2 px-5 sm:px-6">
+      <div className="flex justify-end">
+        <div className="pointer-events-auto">
+          <ThemeToggle />
+        </div>
+      </div>
     </div>
   );
 }
