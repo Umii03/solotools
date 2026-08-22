@@ -32,4 +32,28 @@
   <url>
     <loc>https://solotools-1ou.pages.dev/image-converter/</loc>
   </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/jpg-to-png/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/png-to-jpg/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/jpg-to-webp/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/png-to-webp/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/webp-to-jpg/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/webp-to-png/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-compressor/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
+  </url>
 </urlset>

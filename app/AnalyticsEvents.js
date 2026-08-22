@@ -2,43 +2,91 @@
 
 import { useEffect } from "react";
 
+const calculatorPaths = new Set([
+  "/freelance-hourly-rate-calculator/",
+  "/project-price-calculator/",
+  "/freelance-income-calculator/",
+  "/salary-to-hourly-calculator/",
+]);
+
+const imageToolPaths = new Set([
+  "/image-converter/",
+  "/jpg-to-png/",
+  "/png-to-jpg/",
+  "/jpg-to-webp/",
+  "/png-to-webp/",
+  "/webp-to-jpg/",
+  "/webp-to-png/",
+  "/image-compressor/",
+  "/image-resizer/",
+]);
+
 export default function AnalyticsEvents() {
   useEffect(() => {
-    const handleChange = (event) => {
+    function handleInteraction(event) {
       const target = event.target;
 
-      if (
-        !(target instanceof HTMLInputElement) &&
-        !(target instanceof HTMLSelectElement)
-      ) {
-        return;
-      }
+      const isUsefulInput =
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLSelectElement ||
+        target instanceof HTMLTextAreaElement;
+
+      if (!isUsefulInput) return;
 
       const path = window.location.pathname;
 
-      if (!path.includes("calculator")) {
+      let toolType = null;
+
+      if (calculatorPaths.has(path)) {
+        toolType = "calculator";
+      } else if (imageToolPaths.has(path)) {
+        toolType = "image";
+      } else {
         return;
       }
 
-      const storageKey = `solotools-calculator-used:${path}`;
+      const sessionKey = `solotools_tool_used:${path}`;
 
-      if (sessionStorage.getItem(storageKey)) {
+      try {
+        if (sessionStorage.getItem(sessionKey)) {
+          return;
+        }
+      } catch {
+      }
+
+      if (typeof window.gtag !== "function") {
         return;
       }
 
-      sessionStorage.setItem(storageKey, "1");
+      window.gtag("event", "tool_used", {
+        tool_type: toolType,
+        tool_path: path,
+      });
 
-      if (typeof window.gtag === "function") {
+      if (toolType === "calculator") {
         window.gtag("event", "calculator_used", {
-          calculator_path: path,
+          tool_path: path,
         });
       }
-    };
 
-    document.addEventListener("change", handleChange, true);
+      try {
+        sessionStorage.setItem(sessionKey, "1");
+      } catch {
+      }
+    }
+
+    document.addEventListener(
+      "change",
+      handleInteraction,
+      true
+    );
 
     return () => {
-      document.removeEventListener("change", handleChange, true);
+      document.removeEventListener(
+        "change",
+        handleInteraction,
+        true
+      );
     };
   }, []);
 
