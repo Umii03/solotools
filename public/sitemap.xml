@@ -109,6 +109,9 @@
     <loc>https://solotools-1ou.pages.dev/extract-pdf-pages/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/favicon-generator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/find-and-replace/</loc>
   </url>
   <url>
@@ -166,6 +169,9 @@
     <loc>https://solotools-1ou.pages.dev/image-cropper/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/image-downloader/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/image-resizer/</loc>
   </url>
   <url>
@@ -214,10 +220,16 @@
     <loc>https://solotools-1ou.pages.dev/merge-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/meta-tag-generator/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/mortgage-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/number-base-converter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/open-graph-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/organize-pdf/</loc>
@@ -299,6 +311,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/reverse-pdf-pages/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/robots-txt-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/roi-calculator/</loc>
@@ -403,6 +418,9 @@
     <loc>https://solotools-1ou.pages.dev/watermark-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/web-tools/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/webp-to-jpg/</loc>
   </url>
   <url>
@@ -422,5 +440,8 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/xml-formatter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/xml-sitemap-generator/</loc>
   </url>
 </urlset>

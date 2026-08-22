@@ -47,6 +47,12 @@ export const categoryInfo = {
     description:
       "Use countdowns, a stopwatch, Pomodoro sessions, and date countdown tools.",
   },
+  web: {
+    name: "Web Tools",
+    href: "/web-tools/",
+    description:
+      "Generate website metadata, robots files, sitemaps, favicons, and work with direct image URLs.",
+  },
 };
 
 export const toolCategories = [
@@ -58,6 +64,7 @@ export const toolCategories = [
   "unit",
   "color",
   "time",
+  "web",
 ];
 
 function tool(
@@ -797,6 +804,42 @@ export const toolRegistry = [
     "Days Until Calculator",
     "/days-until-calculator/",
     "Calculate how many calendar days remain until or have passed since a selected date."
+  ),
+  tool(
+    "web",
+    "Online Image Downloader",
+    "/image-downloader/",
+    "Download images from direct image URLs individually or save successful downloads together as a ZIP."
+  ),
+  tool(
+    "web",
+    "Meta Tag Generator",
+    "/meta-tag-generator/",
+    "Generate common HTML title, description, canonical, robots, and keyword metadata."
+  ),
+  tool(
+    "web",
+    "Robots.txt Generator",
+    "/robots-txt-generator/",
+    "Generate a robots.txt file with allow, disallow, and sitemap directives."
+  ),
+  tool(
+    "web",
+    "XML Sitemap Generator",
+    "/xml-sitemap-generator/",
+    "Generate a basic XML sitemap from a list of absolute website URLs."
+  ),
+  tool(
+    "web",
+    "Open Graph Meta Generator",
+    "/open-graph-generator/",
+    "Generate Open Graph metadata for website and social sharing previews."
+  ),
+  tool(
+    "web",
+    "Favicon Generator",
+    "/favicon-generator/",
+    "Generate common PNG favicon sizes from an image and download them individually or as a ZIP."
   ),
 ];
 
