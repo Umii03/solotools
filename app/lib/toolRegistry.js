@@ -29,6 +29,12 @@ export const categoryInfo = {
     description:
       "Format, encode, decode, generate, convert, and validate development data.",
   },
+  unit: {
+    name: "Unit Converters",
+    href: "/unit-converters/",
+    description:
+      "Convert length, weight, temperature, area, volume, and digital storage units.",
+  },
 };
 
 export const toolCategories = [
@@ -37,6 +43,7 @@ export const toolCategories = [
   "pdf",
   "text",
   "developer",
+  "unit",
 ];
 
 function tool(
@@ -686,7 +693,43 @@ export const toolRegistry = [
     "Insert Blank PDF Page",
     "/insert-blank-pdf-page/",
     "Insert a blank page at a selected position in a PDF."
-  ),];
+  ),  tool(
+    "unit",
+    "Length Converter",
+    "/length-converter/",
+    "Convert meters, kilometers, centimeters, millimeters, inches, feet, yards, and miles."
+  ),
+  tool(
+    "unit",
+    "Weight Converter",
+    "/weight-converter/",
+    "Convert kilograms, grams, milligrams, pounds, ounces, and stone."
+  ),
+  tool(
+    "unit",
+    "Temperature Converter",
+    "/temperature-converter/",
+    "Convert temperatures between Celsius, Fahrenheit, and Kelvin."
+  ),
+  tool(
+    "unit",
+    "Area Converter",
+    "/area-converter/",
+    "Convert square meters, square feet, acres, hectares, square miles, and other area units."
+  ),
+  tool(
+    "unit",
+    "Volume Converter",
+    "/volume-converter/",
+    "Convert liters, milliliters, gallons, cups, tablespoons, teaspoons, and other volume units."
+  ),
+  tool(
+    "unit",
+    "Data Storage Converter",
+    "/data-storage-converter/",
+    "Convert bytes, KB, MB, GB, TB and binary KiB, MiB, GiB, and TiB units."
+  ),
+];
 
 export function toolsByCategory(
   category

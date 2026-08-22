@@ -13,6 +13,9 @@
     <loc>https://solotools-1ou.pages.dev/age-calculator/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/area-converter/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/base64-encoder-decoder/</loc>
   </url>
   <url>
@@ -59,6 +62,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/csv-to-json/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/data-storage-converter/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/date-difference-calculator/</loc>
@@ -170,6 +176,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/jwt-decoder/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/length-converter/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/line-counter/</loc>
@@ -313,6 +322,9 @@
     <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/temperature-converter/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/terms/</loc>
   </url>
   <url>
@@ -337,6 +349,9 @@
     <loc>https://solotools-1ou.pages.dev/tools/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/unit-converters/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/unix-timestamp-converter/</loc>
   </url>
   <url>
@@ -349,6 +364,9 @@
     <loc>https://solotools-1ou.pages.dev/vat-calculator/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/volume-converter/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/watermark-pdf/</loc>
   </url>
   <url>
@@ -356,6 +374,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/webp-to-png/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/weight-converter/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/whitespace-remover/</loc>

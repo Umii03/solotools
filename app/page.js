@@ -16,7 +16,7 @@ export const metadata = {
   },
 
   description:
-    `Use ${toolCount}+ free online tools including calculators, PDF tools, image utilities, text tools, and developer tools. Fast, practical, and no signup required.`,
+    `Use ${toolCount}+ free online tools including calculators, PDF tools, image utilities, unit converters, text tools, and developer tools. Fast, practical, and no signup required.`,
 
   alternates: {
     canonical: "/",
@@ -26,7 +26,7 @@ export const metadata = {
     title:
       `SoloTools - ${toolCount}+ Free Online Tools`,
     description:
-      "Free calculators, PDF tools, image utilities, text tools, and developer tools in one clean browser-based toolkit.",
+      "Free calculators, PDF tools, image utilities, unit converters, text tools, and developer tools in one clean browser-based toolkit.",
     url:
       "https://solotools-1ou.pages.dev/",
     type:
@@ -88,6 +88,16 @@ const categoryDesign = {
       "from-cyan-500/20 via-cyan-500/5 to-transparent",
     iconStyle:
       "bg-cyan-500/10 text-cyan-600 dark:bg-cyan-400/10 dark:text-cyan-300",
+  },
+  unit: {
+    eyebrow:
+      "Measurements",
+    icon:
+      "calculator",
+    gradient:
+      "from-amber-500/20 via-amber-500/5 to-transparent",
+    iconStyle:
+      "bg-amber-500/10 text-amber-700 dark:bg-amber-400/10 dark:text-amber-300",
   },
 };
 
@@ -617,7 +627,7 @@ export default function Home() {
               "Working tools",
             ],
             [
-              "5",
+              toolCategories.length,
               "Tool categories",
             ],
             [
@@ -676,7 +686,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 
             {categories.map(
               (category) => (
