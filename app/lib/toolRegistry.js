@@ -35,6 +35,18 @@ export const categoryInfo = {
     description:
       "Convert length, weight, temperature, area, volume, and digital storage units.",
   },
+  color: {
+    name: "Color Tools",
+    href: "/color-tools/",
+    description:
+      "Convert colors, check contrast, create gradients, palettes, and random colors.",
+  },
+  time: {
+    name: "Time Tools",
+    href: "/time-tools/",
+    description:
+      "Use countdowns, a stopwatch, Pomodoro sessions, and date countdown tools.",
+  },
 };
 
 export const toolCategories = [
@@ -44,6 +56,8 @@ export const toolCategories = [
   "text",
   "developer",
   "unit",
+  "color",
+  "time",
 ];
 
 function tool(
@@ -693,7 +707,8 @@ export const toolRegistry = [
     "Insert Blank PDF Page",
     "/insert-blank-pdf-page/",
     "Insert a blank page at a selected position in a PDF."
-  ),  tool(
+  ),
+  tool(
     "unit",
     "Length Converter",
     "/length-converter/",
@@ -728,6 +743,60 @@ export const toolRegistry = [
     "Data Storage Converter",
     "/data-storage-converter/",
     "Convert bytes, KB, MB, GB, TB and binary KiB, MiB, GiB, and TiB units."
+  ),
+  tool(
+    "color",
+    "Color Converter",
+    "/color-converter/",
+    "Convert HEX colors into RGB and HSL color values."
+  ),
+  tool(
+    "color",
+    "Color Contrast Checker",
+    "/color-contrast-checker/",
+    "Check color contrast ratios and common WCAG AA and AAA thresholds."
+  ),
+  tool(
+    "color",
+    "CSS Gradient Generator",
+    "/css-gradient-generator/",
+    "Create a two-color CSS linear gradient and copy the generated CSS."
+  ),
+  tool(
+    "color",
+    "Color Palette Generator",
+    "/color-palette-generator/",
+    "Generate light and dark color variations from a selected base color."
+  ),
+  tool(
+    "color",
+    "Random Color Generator",
+    "/random-color-generator/",
+    "Generate random colors with HEX, RGB, and HSL values."
+  ),
+  tool(
+    "time",
+    "Countdown Timer",
+    "/countdown-timer/",
+    "Count down to a selected date and time in days, hours, minutes, and seconds."
+  ),
+  tool(
+    "time",
+    "Online Stopwatch",
+    "/stopwatch/",
+    "Start, pause, resume, and reset a browser-based stopwatch."
+  ),
+  tool(
+    "time",
+    "Pomodoro Timer",
+    "/pomodoro-timer/",
+    "Use focus, short-break, and long-break Pomodoro timers."
+  ),
+  tool(
+    "time",
+    "Days Until Calculator",
+    "/days-until-calculator/",
+    "Calculate how many calendar days remain until or have passed since a selected date."
   ),
 ];
 

@@ -16,7 +16,7 @@ export const metadata = {
   },
 
   description:
-    `Use ${toolCount}+ free online tools including calculators, PDF tools, image utilities, unit converters, text tools, and developer tools. Fast, practical, and no signup required.`,
+    `Use ${toolCount}+ free online tools including calculators, PDF tools, image utilities, unit converters, color tools, time tools, text tools, and developer tools. Fast, practical, and no signup required.`,
 
   alternates: {
     canonical: "/",
@@ -26,7 +26,7 @@ export const metadata = {
     title:
       `SoloTools - ${toolCount}+ Free Online Tools`,
     description:
-      "Free calculators, PDF tools, image utilities, unit converters, text tools, and developer tools in one clean browser-based toolkit.",
+      "Free calculators, PDF tools, image utilities, unit converters, color tools, time tools, text tools, and developer tools in one clean browser-based toolkit.",
     url:
       "https://solotools-1ou.pages.dev/",
     type:
@@ -98,6 +98,26 @@ const categoryDesign = {
       "from-amber-500/20 via-amber-500/5 to-transparent",
     iconStyle:
       "bg-amber-500/10 text-amber-700 dark:bg-amber-400/10 dark:text-amber-300",
+  },
+  color: {
+    eyebrow:
+      "Design & accessibility",
+    icon:
+      "image",
+    gradient:
+      "from-fuchsia-500/20 via-fuchsia-500/5 to-transparent",
+    iconStyle:
+      "bg-fuchsia-500/10 text-fuchsia-700 dark:bg-fuchsia-400/10 dark:text-fuchsia-300",
+  },
+  time: {
+    eyebrow:
+      "Focus & dates",
+    icon:
+      "calculator",
+    gradient:
+      "from-orange-500/20 via-orange-500/5 to-transparent",
+    iconStyle:
+      "bg-orange-500/10 text-orange-700 dark:bg-orange-400/10 dark:text-orange-300",
   },
 };
 

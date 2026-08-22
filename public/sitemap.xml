@@ -46,6 +46,18 @@
     <loc>https://solotools-1ou.pages.dev/character-counter/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/color-contrast-checker/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/color-converter/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/color-palette-generator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/color-tools/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/commission-calculator/</loc>
   </url>
   <url>
@@ -58,7 +70,13 @@
     <loc>https://solotools-1ou.pages.dev/contact/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/countdown-timer/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/crop-pdf/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/css-gradient-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/csv-to-json/</loc>
@@ -68,6 +86,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/date-difference-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/days-until-calculator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/developer-tools/</loc>
@@ -241,6 +262,9 @@
     <loc>https://solotools-1ou.pages.dev/png-to-webp/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/pomodoro-timer/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/privacy-policy/</loc>
   </url>
   <url>
@@ -254,6 +278,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/query-string-parser/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/random-color-generator/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/random-number-generator/</loc>
@@ -322,6 +349,9 @@
     <loc>https://solotools-1ou.pages.dev/split-pdf/</loc>
   </url>
   <url>
+    <loc>https://solotools-1ou.pages.dev/stopwatch/</loc>
+  </url>
+  <url>
     <loc>https://solotools-1ou.pages.dev/temperature-converter/</loc>
   </url>
   <url>
@@ -341,6 +371,9 @@
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/time-duration-calculator/</loc>
+  </url>
+  <url>
+    <loc>https://solotools-1ou.pages.dev/time-tools/</loc>
   </url>
   <url>
     <loc>https://solotools-1ou.pages.dev/tip-calculator/</loc>
